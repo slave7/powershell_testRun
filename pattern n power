@@ -1,0 +1,35 @@
+function power{
+
+[int]$a = Read-Host -prompt ("Enter you first num a")
+
+[int]$b = Read-Host -prompt ("Enter you second num b")
+
+$c =$a
+
+for($i=1; $i -lt $b; $i++){
+
+$c = $c*$a
+
+}
+
+cls
+
+Write-Host("Your $a^$b is $c")
+
+[char]$d= Read-Host -prompt ("Press any key and 'Enter' to exit.")
+
+}
+
+ 
+
+for($i=0; $i -lt 6; $i++){
+
+    for($j=0; $j -lt $i+1; $j++){
+
+    Write-Host -NoNewline "*" -ForegroundColor DarkMagenta -BackgroundColor White
+
+    }
+
+    Write-Host ""
+
+}
